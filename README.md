@@ -1,19 +1,19 @@
-"""
-# Customer Support Agent
+# Customer Support Agent (Production-Ready)
 
 ## Features
-- LangGraph multi-agent orchestration
+- LangGraph multi-agent system
 - OpenAI LLM planner
 - FAISS vector DB (RAG)
-- LangSmith tracing (observability)
+- LangSmith tracing
+- Guardrails (input/output safety)
 
 ## Setup
-```bash
 pip install -r requirements.txt
+
 export OPENAI_API_KEY=your_key
 export LANGCHAIN_API_KEY=your_key
+
 python run.py
-```
 
 ## Architecture
-User → Planner → Router → (Tool | RAG | Escalation)
+User → Guardrails → Planner → Router → Tool/RAG/Escalation → Guardrails → Response

@@ -3,4 +3,6 @@ langgraph
 openai
 faiss-cpu
 langsmith
+fastapi
+uvicorn
 python-dotenv
