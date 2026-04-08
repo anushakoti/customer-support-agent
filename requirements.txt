@@ -1,8 +1,26 @@
-langchain
-langgraph
-openai
-faiss-cpu
-langsmith
-fastapi
-uvicorn
-python-dotenv
+# Core LLM / agent framework
+langchain==0.2.16
+langchain-openai==0.1.22
+langchain-community==0.2.16
+langchain-core==0.2.38
+langgraph==0.2.14
+
+# Vector store
+faiss-cpu==1.8.0
+
+# LLM provider
+openai==1.45.0
+
+# Observability
+langsmith==0.1.117
+
+# API server
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Config
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.2
+pytest-asyncio==0.23.8
